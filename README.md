@@ -12,8 +12,7 @@ What you will learn
 What you will need
 ==================
 
-Software dependencies
----------------------
+##### Software dependencies
 
 Java SDK 1.8<br />
 Maven<br />
