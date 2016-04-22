@@ -1,6 +1,6 @@
 Craftsmanship 101
 =================
-##### Software development is not a mechanical task. In order to deliver the most value to your users, it's important to understand that coding is no longer the hard part of software development. The hard part is fuguring out what to write.
+##### Software development is not a mechanical task. In order to deliver the most value to your users, it's important to understand that coding is no longer the hard part of software development. The hard part is figuring out what to write.
 
 What you will learn
 ===================
