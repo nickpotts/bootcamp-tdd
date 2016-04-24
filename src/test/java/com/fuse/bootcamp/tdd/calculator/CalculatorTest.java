@@ -1,5 +1,6 @@
 package com.fuse.bootcamp.tdd.calculator;
 
+import com.sun.scenario.effect.impl.sw.java.JSWBlend_EXCLUSIONPeer;
 import org.junit.*;
 
 import static org.junit.Assert.*;
@@ -43,6 +44,34 @@ public class CalculatorTest {
 		assertTrue(result);
 	}
 
+	@Test
+	public void testMultiplication() {
+		int result = calculator.multiply(3,4);
+
+		assertEquals(12, result);
+	}
+
+	@Test
+	public void testDivison() throws Exception {
+		int result = calculator.divide(20,4);
+
+		assertEquals(5, result);
+	}
+
+
+	@Test(expected = Exception.class)
+	public void testDivisionByZero() throws Exception {
+		int result = calculator.divide(10,0);
+	}
+
+	@Test
+	public void testDivisionExceptionMessage() throws Exception {
+		try {
+			int result = calculator.divide(11, 0);
+		} catch (Exception e) {
+			assertEquals("Can not divide by zero.", e.getMessage());
+		}
+	}
     // Add a test for the multiplication method
 
     // Add a test for the division method

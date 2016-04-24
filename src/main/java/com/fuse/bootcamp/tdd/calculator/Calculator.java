@@ -19,9 +19,7 @@ public class Calculator implements ICalculator {
 
 	@Override
 	public int divide(int a, int b) throws Exception {
-		if (b == 0) {
-			throw new Exception("Division by zero is undefined!");
-		}
+		if(b == 0) { throw new Exception("Can not divide by zero."); }
 
 		return a / b;
 	}

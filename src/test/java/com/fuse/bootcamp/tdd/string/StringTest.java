@@ -35,6 +35,7 @@ public class StringTest {
         assertEquals("hamburger", bcStr.concat(str1, str2));
     }
 
+
     @Test
     public void testConcatenationOrder() {
         String str1 = "hot";
@@ -44,11 +45,26 @@ public class StringTest {
     }
 
     @Test
-    public void testReversal() {
+    public void testReversalGrape() {
+        String str = "grape";
+
+        assertEquals("eparg", bcStr.reverse(str));
+    }
+
+    @Test
+    public void testReversalCherry() {
+        String str = "cherry";
+
+        assertEquals("yrrehc", bcStr.reverse(str));
+    }
+
+    @Test
+    public void testBuggyReversal() {
         String str = "apple";
 
         assertEquals("elppa", bcStr.reverse(str));
     }
+
 
     @Test
     public void testToUpperCase() {
